@@ -2,7 +2,7 @@
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/volodinroman/PyPoly2d/master/LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.6-blue.svg)](https://python.org)
-[![PyQt](https://img.shields.io/badge/PyQt-5.6-green.svg)](https://python.org)
+[![PyQt](https://img.shields.io/badge/PyQt-5.6-green.svg)](https://www.qt.io/)
 
 
 ![Image of Yaktocat](https://github.com/volodinroman/PyPoly2d/blob/master/assets/banner.jpg)
