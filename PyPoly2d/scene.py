@@ -338,7 +338,7 @@ class Scene(QtWidgets.QGraphicsScene):
         """Do Delauney triangulation for the grid points"""
 
         #image load
-        imagePath = os.path.join(ROOT, "res", "colors.jpg")
+        imagePath = os.path.join(ROOT, "res", "color_01.jpg")
         pixmap = QtGui.QPixmap(imagePath)
 
         if not self._gridCoords:
