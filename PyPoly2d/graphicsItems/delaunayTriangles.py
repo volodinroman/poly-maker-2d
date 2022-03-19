@@ -57,7 +57,7 @@ class DelaunayTriangles(QtWidgets.QGraphicsLineItem):
                 pixX = centerx - self._sizes[0]
                 pixY = centery - self._sizes[2] 
 
-                pixelColor = self._img.pixelColor(QtCore.QPoint(pixX, pixY))
+                pixelColor = self._img.pixelColor(QtCore.QPoint(int(pixX), int(pixY)))
 
                 brush = QtGui.QBrush(QtGui.QColor(pixelColor.red(), pixelColor.green(),pixelColor.blue(), 255)) 
                 pen = QtGui.QPen((QtGui.QColor(pixelColor.red(), pixelColor.green(),pixelColor.blue(), 150)), 1, QtCore.Qt.SolidLine)
@@ -65,9 +65,9 @@ class DelaunayTriangles(QtWidgets.QGraphicsLineItem):
                 painter.setPen(pen)
 
                 polygon = QtGui.QPolygon()
-                QtPoint_1 = QtCore.QPoint(p0[0], p0[1])
-                QtPoint_2 = QtCore.QPoint(p1[0], p1[1])
-                QtPoint_3 = QtCore.QPoint(p2[0], p2[1])
+                QtPoint_1 = QtCore.QPoint(int(p0[0]), int(p0[1]))
+                QtPoint_2 = QtCore.QPoint(int(p1[0]), int(p1[1]))
+                QtPoint_3 = QtCore.QPoint(int(p2[0]), int(p2[1]))
                 polygon.append(QtPoint_1)
                 polygon.append(QtPoint_2)
                 polygon.append(QtPoint_3)
